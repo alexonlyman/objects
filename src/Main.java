@@ -13,6 +13,7 @@ public class Main {
         Book secondBook = new Book("Вий", "Николай Гоголь", 1835);
         Author secondAuthor = new Author("Николай", "Гоголь");
         System.out.println(book.getTitle());
+        System.out.println();
 
     }
 }
