@@ -5,7 +5,7 @@ public class Main {
 
 
         System.out.println(book.getTitle());
-        System.out.println(book.getNameAuthor());
+
 
         System.out.println(book.getPublicationYear());
 
