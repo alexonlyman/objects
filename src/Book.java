@@ -5,10 +5,10 @@ public class Book {
     public Author author;
     private int publicationYear;
 
-    public  Book (String title, String author, int publicationYear ){
+    public  Book (String title, Author author, int publicationYear ){
 
         this.title = title;
-
+        this.author = author;
         this.publicationYear = publicationYear;
 
     }
@@ -18,16 +18,20 @@ public class Book {
 
     }
 
-
-
-    public String toString() {
-       return "Название книги " + this.title + " Год публикации " + this.publicationYear + " Автор " + author;
-    }
-
-
     public int getPublicationYear() {
         return this.publicationYear;
     }
+
+    public Author getAuthor() {
+        return this.author;
+    }
+
+
+
+    public String toString() {
+       return "Название книги " + this.title + " Год публикации " + this.publicationYear + " Автор " + this.author;
+    }
+
 
     public void setTitle(int publicationYear) {
         this.publicationYear = publicationYear;

@@ -1,16 +1,12 @@
 import java.util.Objects;
 
 public class Author {
-    private String firstName;
-    private String secondName;
+    public String firstName;
+    public String secondName;
 
     public Author (String firstName,String secondName) {
         this.firstName = firstName;
         this.secondName = secondName;
-    }
-
-    public String toString() {
-        return " Имя " + firstName + " Фамилия " + secondName;
     }
 
     public String getFirstName() {
@@ -19,6 +15,10 @@ public class Author {
 
     public String getSecondName() {
         return this.secondName;
+    }
+
+    public String toString() {
+        return " Имя " + firstName + " Фамилия " + secondName;
     }
 
     @Override
