@@ -1,19 +1,16 @@
 import java.util.Objects;
 
 public class Book {
-    private  String title;
-    private  Author author;
+    private String title;
+    private Author author;
     private int publicationYear;
 
-    public  Book (String title, Author newAuthor, int publicationYear ){
+    public Book(String title, Author newAuthor, int publicationYear) {
 
         this.title = title;
-        this.author = author;
+        this.author = newAuthor;
         this.publicationYear = publicationYear;
 
-    }
-
-    public Book(String title, String newAuthor, int publicationYear) {
     }
 
 
@@ -26,14 +23,13 @@ public class Book {
         return this.publicationYear;
     }
 
-//    public Author getAuthor() {
-//        return this.author;
-//    }
-
+    public Author getAuthor() {
+        return this.author;
+    }
 
 
     public String toString() {
-       return "Название книги " + this.title + " Год публикации " + this.publicationYear + " Автор " + this.author;
+        return "Название книги " + this.title + " Год публикации " + this.publicationYear + " Автор " + this.author;
     }
 
 
