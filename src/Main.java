@@ -5,7 +5,7 @@ public class Main {
  Book secondBook = new Book(" Марфий ",newAutor, 1924);
 
 
-
+        System.out.println(secondBook);
 
 
 
